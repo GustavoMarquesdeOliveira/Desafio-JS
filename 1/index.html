@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <script>
+     function validarForm () {
+         console.log("Preencher todos os campos");
+        var nome = document.forms["meuForm"]["fname"].value;
+        var pontos = document.forms["meuForm"]["pontos"].value;
+        var notas = document.forms["meuForm"]["notas"].value;
+        var universidade = document.forms["meuForm"]["universidade"].value
+        var empresas = document.forms["meuForm"]["empresas"].value
+        var avatars = document.forms["meuForm"]["avatars1"].value
+        var horários = document.forms["meuForm"]["horários"].value
+
+
+        if(nome == ""){
+            alert("Preencher o campo Nome")
+        }
+       if(pontos == ""){
+           alert("Preencher o campo Pontos")
+       }
+       if(notas == ""){
+           alert("Preencher o campo Notas")
+       }
+       if(universidade == ""){
+           alert("Preencher o campo Universidade")
+       }
+       if(empresas == ""){
+           alert("Preencher o campo Empresas")
+       }
+       if(avatars1 == ""){
+        alert("Preencher o campo Avatars")
+       }
+       if(horários == ""){
+           alert("Preencher o campo Horários")
+       }
+    }
+
+    </script>
+</head>
+<body>
+    <form name="meuForm">
+<label for="nome">Nome:</label>
+<input type="text" name="fname"> <br> <br>
+<label for="pontos">Pontos:</label>
+<input type="number" name="pontos"> <br> <br>
+<label for="notas">Notas:</label>
+<input type="number" name="notas"> <br> <br>
+<label for="universidade">Universidade</label>
+<input type="text" name="universidade"> <br> <br>
+<label for="empresas">Empresas</label>
+<input type="text" name="empresas"> <br> <br>
+<p>Escolha seu avatar</p>
+<label for="avatars1">Avatars 1</label>
+<input type="radio" name="avatars1">
+
+<label for="avatars2">Avatar 2</label>
+<input type="radio" name="avatars2">
+
+<br> <br>
+<label for="Horários">Horários</label>
+<input type="text" name="horários"> <br> <br>
+<input type="button" value="Enviar" onclick="validarForm()">
+
+
+
+    </form>
+    
+</body>
+</html>
