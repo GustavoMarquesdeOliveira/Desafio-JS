@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript desafio</h2>
+    <p>O resultado é</p>
+    <div id="res">
+
+    </div>
+    
+        <input type="number" id="ano1"> 
+        <input type="button" value="Enviar" onclick="ano()">
+    
+    
+    
+    
+    <script>
+        
+            function ano(){
+                var res = document.getElementById("ano1").value
+                var resInt = parseInt(res)
+                var Maiordeidade = "Maior de idade"
+                var menor = "Menor de idade"
+                if(resInt >= 2004){
+                    document.getElementById("res").innerHTML = menor
+                } else{
+                    document.getElementById("res").innerHTML = Maiordeidade
+
+                }
+            
+             
+        }
+             
+    </script>
+</body>
+</html>

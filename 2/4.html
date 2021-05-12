@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript desafio</h2>
+    <p>O resultado é</p>
+    <div id="res">
+
+    </div>
+    
+        <input type="text" id="txt1"> 
+        <input type="button" value="Enviar" onclick="verDota()">
+    
+    
+    
+    
+    <script>
+        
+            function verDota(){
+                
+                var res = document.getElementById("txt1").value
+                res = res.toLowerCase()
+                var result = res.indexOf('dota')
+                if(result > -1){
+                 alert("Lol é ruim")
+                } 
+                
+        }
+            
+    </script>
+</body>
+</html>
