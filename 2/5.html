@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript desafio</h2>
+    <p>O resultado é</p>
+    <div id="res">
+
+    </div>
+    
+        <input type="number" id="n1"> <br> <br>
+        <input type="button" value="Enviar" onclick="media()">
+    
+    
+    
+    
+    <script>
+        
+            function media(){
+                var media1 = document.getElementById("n1").value
+                var soma = 0
+                var arrayNumero = media1.toString().split("")
+                var arrayOfNumbers = arrayNumero.map(Number)
+
+                for(i = 0; i < arrayOfNumbers.length; i++){
+                    soma += arrayOfNumbers[i]
+                    }
+                    media2 = soma/5
+                    document.getElementById("res").innerHTML = media2
+                }
+            
+    </script>
+</body>
+</html>
